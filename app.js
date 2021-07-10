@@ -20,7 +20,7 @@ app.use('/auth',auth)
 app.use('/',model)
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, './build/index.html'));
+    res.sendFile(path.join(__dirname, './dist/index.html'));
 });
 
 app.listen(5000,()=>{

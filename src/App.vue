@@ -17,10 +17,10 @@
 			</template>
 		</b-navbar>
 		<template v-if="!sessionId">
-			<Login v-on:login="validateSession" v-on:loadingcomplete="loadingcomplete" />
+			<Login @login="validateSession" @loadingcomplete="loadingcomplete" />
 		</template>
 		<template v-if="sessionId">
-			<BoatsApp v-on:logout="logout" v-on:loadingcomplete="loadingcomplete" v-on:loadingbegin="loadingbegin"/>
+			<BoatsApp @logout="logout" @loadingcomplete="loadingcomplete" @loadingbegin="loadingbegin"/>
 		</template>
 	</div>
 </template>

@@ -4,7 +4,7 @@
 			<l-map ref="map" :style="style" :bounds="bounds" :minZoom="minZoom" 
 			:maxZoom="maxZoom" :zoom="zoom" zoomAnimation :center="center">
 				<l-tile-layer :url="url"></l-tile-layer>
-				<l-marker :options="{'id':index}" v-on:ready="ready" v-for="(marker,index) of markers" :key="index" :lat-lng="marker">
+				<l-marker :options="{'id':index}" @ready="ready" v-for="(marker,index) of markers" :key="index" :lat-lng="marker">
 					<l-tooltip>
 						<b v-if="marker.yourLocation">Your Location</b>
 						<p v-if="marker.name"><b>Name:</b>{{marker.name}}</p>
