@@ -17,6 +17,7 @@ const login=(req,res)=>{
         loginUrl: SF_LOGIN_URL,
         version: API_VERSION
     });
+    console.log('login');
     conn.login(username,password+securityToken, function(err, userInfo) {
         console.log(err)
         if (err) {
