@@ -1,12 +1,16 @@
 {
-  "name": "vue-application",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nodevueproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@mdi/font": "^5.9.55",
     "@salesforce-ux/design-system": "^2.15.8",

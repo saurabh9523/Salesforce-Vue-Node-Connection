@@ -8,8 +8,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require("body-parser");
 const path = require('path');
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../vue-app/dist')));
-app.use(express.static(path.join(__dirname, '../vue-app/src/assets')));
+app.use(express.static(path.join(__dirname, './dist')));
+app.use(express.static(path.join(__dirname, './src/assets')));
 
 app.use(cookieParser());
 app.use(cors())
